@@ -1,0 +1,83 @@
+/* CSS Document */
+
+/*-----------------------------------------
+
+BASIC STRUCTURE
+
+--------------------------------------------*/
+#wrapper{
+	width: 960px;
+	padding: 5px;
+	margin: 20px auto;
+}
+#header{
+	height: 100px;
+}
+#sidebar{
+	float: left;
+	width: 300px;
+}
+	
+	                                                                 
+
+
+#content{
+	float: right;
+	width: 600px;
+}
+
+#footer{
+	clear: both;
+}
+/*------------------------------
+
+COLORS AND FONTS
+color.adobe.com
+
+#C8369A
+#787CE8
+#02FFC8
+#95E821
+#FFBD36
+-------------------------------*/
+body{
+	font-family:Gotham, Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+	color:darkturquoise;
+	/*background-color:#02FFC8;*/
+	background-image: url("../images/background.png")
+	
+}
+
+#header, #sidebar, #content, #footer{
+	/*background-color:#C8369A;*/
+	background-color:rgba(5,6,92,0.40);
+	margin-bottom: 4px;
+	border: double;
+	border-radius: 8px;
+	border-color: grey;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+	
+}
+@media screen and (max width: 780px) {
+	
+}
+@media screen and (max-width: 480px) {
+	
+}
+/* Phones */
+@media only screen
+	and (min-device-width: 320px)
+	and (max-device-width: 568px) {
+		
+}
+

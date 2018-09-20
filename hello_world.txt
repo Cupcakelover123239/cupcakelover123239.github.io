@@ -1,0 +1,14 @@
+
+<h1>About Me</h1>
+
+<p>Hello my name is Swathi</p>
+
+<p>I am 13 years old, attending Valley Christian Junior High. I have one older sister who is 21 and in college. My mom and dad are both really awesome.</p>
+
+click <a href="https://learn.vcs.net/"<where> to see where I go to school.<a>
+
+<p>I have 2 computer science electives to improve my coding<p>
+
+click <a href="https://learn.vcs.net/course/view.php?id=565"<where> to see my elective.<a>
+
+<p>I also play table tennis and I am an international level table tennis player. I end practice very late so I unfortunately don't get enough sleep<p>
