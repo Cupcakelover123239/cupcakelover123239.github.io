@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>7.8 - Room Service</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		var hours = prompt("What hour is it? ie. 7 for 7am, 15 for 3pm");
+		
+			while(true) {
+				if(hours >= 6 && hours < 10 )
+		{alert("You can go eat breakfast at the Continental Breakfast! Have fun!");}
+	else if( hours >= 11 && hours < 14 )
+		{alert("The restaraunt is open!");}
+	else if( hours >= 17 && hours < 21 )
+		{alert("You can get room service or you can visit the restaraunt!");}
+	else
+		{alert("You'll have to wait or you can go out to eat a snack.");}
+	
+	var more_hours = confirm("Do you want to enter another hour?");
+	if( !more_hours ) {
+		break;
+	
+		}
+	
+	
+	}
+</script>
+</body>
+</html>

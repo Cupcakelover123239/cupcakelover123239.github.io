@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>7.13 - switch program</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		var program = prompt("Enter F to convert Fahrenheit to Celsius\n\nEnter C to convert Celsius to Fahrenheit\n\nEnter D to convert Dollar to Yen\n\nEnter Y to convert Yen to Dollar");
+		
+	while(true) {
+		switch(program) {
+			case "F":
+				var f = prompt("What's the temperature in farenheit?");
+				var c = (f-32) * 5/9;
+				alert("The answer is " + c);
+				break;
+			case "C":
+				var c = prompt("What's the temperature in celsius?");
+				var f = (c+32) / 5/9;
+				alert("The answer is " + f);
+				break;
+			case "D":
+				var D = prompt("How many dollars do you have?");
+				var Y = 112.53 * D;
+				alert("You have this much yen" + Y);
+				break;
+			case "Y":
+				var Y = prompt("How much Yen do you have?");
+				var D = 113.90 * Y;
+				alert("You have this many dollars" + D);
+				break;
+			default:
+				alert("Error! Invalid input.");
+				break;
+		}
+		var x = confirm("Do you want to continue?");
+		if(x) {
+			program = prompt("Enter F to convert Fahrenheit to Celsius\n\nEnter C to convert Celsius to Fahrenheit\n\nEnter D to convert Dollar to Yen\n\nEnter Y to convert Yen to Dollar");			
+		} else {
+			break;
+		}
+	}
+		
+	</script>
+</body>
+</html>

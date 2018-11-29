@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.6 - Rock, Paper, Scissors</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		function compare(playerChoice, computerChoice) {
+			document.write("Type either rock, scissors, paper, lizard, or spock.")
+	     if playerChoice == "scissors" & computerChoice == "paper" {
+				 document.write("Player wins!")
+			 }
+			 else if playerChoice == "paper" & computerChoice == "rock" {
+				  document.write("Player wins!")
+			 }
+			 else if playerChoice == "rock" & computerChoice == "lizard" {
+				 document.write("Player wins!")
+			 }
+			 else if playerChoice == "lizard" & computerChoice == "spock" {
+				 document.write("Player wins!")
+			 }
+			 else if playerChoice == "spock" & computerChoice == "scissors" {
+				 document.write("Player wins!")
+			 }
+			 else if playerChoice == "scissors" & computerChoice == "lizard" {
+				 document.write("Player wins!")
+			 }
+			 else if playerChoice == "lizard" & computerChoice == "paper" {
+				 document.write("Player wins!")
+			 }
+			 else if playerChoice == "paper" & computerChoice == "spock" {
+				 document.write("Player wins!")
+			 }
+			 else if playerChoice == "spock" & computerChoice == "rock" {
+				 document.write("Player wins!")
+			 }
+			 else if playerChoice == "rock" & computerChoice == "scissors" {
+				 document.write("Player wins!")
+			 }
+			 else if playerChoice == "paper" & computerChoice == "scissors" {
+				 document.write("Computer wins!")
+			 }
+			 else if playerChoice == "rock" & computerChoice == "paper" {
+				document.write("Computer wins!")
+			}
+			else if playerChoice == "lizard" & computerChoice == "rock" {
+			 document.write("Computer wins!")
+		 }
+		 else if playerChoice == "spock" & computerChoice == "lizard" {
+			document.write("Computer wins!")
+		}
+		else if playerChoice == "scissors" & computerChoice == "spock" {
+		 document.write("Computer wins!")
+	 }
+	 else if playerChoice == "lizard" & computerChoice == "scissors" {
+		 document.write("Computer wins!")
+	 }
+	 else if playerChoice == "paper" & computerChoice == "lizard" {
+		 document.write("computerChoice wins!")
+	 }
+	 else if playerChoice == "spock" & computerChoice == "paper" {
+		 document.write("Computer wins!")
+	 }
+	 else if playerChoice == "rock" & computerChoice == "spock" {
+		 document.write("Computer wins!")
+	 }
+	 else if playerChoice == "scissors" & computerChoice == "rock" {
+		 document.write("Computer wins!")
+	 }
+	 else if playerChoice == computerChoice {
+		 	document.write("It's a tie!")
+	 }
+	 else {
+		 document.write("No one wins, sorry")
+	 }
+
+
+
+
+
+
+		}
+
+		// calculate computer choice
+		var c = Math.random();
+		if( c < .2) {
+			c = "rock";
+		}
+		else if( c < .4) {
+			c = "paper"
+		}
+		else if(c < .6) {
+			c = "scissors"
+		}
+		else if( c < .8) {
+			c = "lizard"
+		}
+		else {
+			c = "spock"
+		}
+		// ask player for their choice
+		var p = prompt("Choose rock, paper, lizard, spock, or scissors");
+		compare(playerChoice, computerChoice)
+		compare(p, c);
+	</script>
+</body>
+</html>
