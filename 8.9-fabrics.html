@@ -7,15 +7,26 @@
 
 <body>
 	<script type="text/javascript">
-		function calculateSubtotal(numberOfRolls) {
+		function Subtotal(r) {
+			var rate = 20;
+			return rate * r;
 
 		}
+		var color = prompt("Which color do you want for your roll/s?");
 
-		document
 
-		// ask the user how many rolls they want
-
-		// print the result using your function
+		try {
+		  var rolls = prompt("How many rolls do you want?");
+			console.log(rolls);
+			if (rolls < 1) {
+				throw "Too few rolls!";
+			} else if (rolls === '') {
+				throw "Please enter a number!"
+			}
+		} catch (err) {
+			alert("error: " + err);
+		}
+		alert(Subtotal(rolls));
 
 	</script>
 </body>

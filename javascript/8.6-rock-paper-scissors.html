@@ -8,68 +8,68 @@
 <body>
 	<script type="text/javascript">
 		function compare(playerChoice, computerChoice) {
-			document.write("Type either rock, scissors, paper, lizard, or spock.")
-	     if playerChoice == "scissors" & computerChoice == "paper" {
+			//document.write("Type either rock, scissors, paper, lizard, or spock.")
+	     if (playerChoice == "scissors" && computerChoice == "paper") {
 				 document.write("Player wins!")
 			 }
-			 else if playerChoice == "paper" & computerChoice == "rock" {
+			 else if (playerChoice == "paper" && computerChoice == "rock") {
 				  document.write("Player wins!")
 			 }
-			 else if playerChoice == "rock" & computerChoice == "lizard" {
+			 else if (playerChoice == "rock" && computerChoice == "lizard") {
 				 document.write("Player wins!")
 			 }
-			 else if playerChoice == "lizard" & computerChoice == "spock" {
+			 else if (playerChoice == "lizard" && computerChoice == "spock") {
 				 document.write("Player wins!")
 			 }
-			 else if playerChoice == "spock" & computerChoice == "scissors" {
+			 else if (playerChoice == "spock" && computerChoice == "scissors") {
 				 document.write("Player wins!")
 			 }
-			 else if playerChoice == "scissors" & computerChoice == "lizard" {
+			 else if (playerChoice == "scissors" && computerChoice == "lizard") {
 				 document.write("Player wins!")
 			 }
-			 else if playerChoice == "lizard" & computerChoice == "paper" {
+			 else if (playerChoice == "lizard" && computerChoice == "paper") {
 				 document.write("Player wins!")
 			 }
-			 else if playerChoice == "paper" & computerChoice == "spock" {
+			 else if (playerChoice == "paper" && computerChoice == "spock") {
 				 document.write("Player wins!")
 			 }
-			 else if playerChoice == "spock" & computerChoice == "rock" {
+			 else if (playerChoice == "spock" && computerChoice == "rock") {
 				 document.write("Player wins!")
 			 }
-			 else if playerChoice == "rock" & computerChoice == "scissors" {
+			 else if (playerChoice == "rock" && computerChoice == "scissors") {
 				 document.write("Player wins!")
 			 }
-			 else if playerChoice == "paper" & computerChoice == "scissors" {
+			 else if (playerChoice == "paper" && computerChoice == "scissors") {
 				 document.write("Computer wins!")
 			 }
-			 else if playerChoice == "rock" & computerChoice == "paper" {
+			 else if (playerChoice == "rock" && computerChoice == "paper") {
 				document.write("Computer wins!")
 			}
-			else if playerChoice == "lizard" & computerChoice == "rock" {
+			else if (playerChoice == "lizard" && computerChoice == "rock") {
 			 document.write("Computer wins!")
 		 }
-		 else if playerChoice == "spock" & computerChoice == "lizard" {
+		 else if (playerChoice == "spock" && computerChoice == "lizard") {
 			document.write("Computer wins!")
 		}
-		else if playerChoice == "scissors" & computerChoice == "spock" {
+		else if (playerChoice == "scissors" && computerChoice == "spock") {
 		 document.write("Computer wins!")
 	 }
-	 else if playerChoice == "lizard" & computerChoice == "scissors" {
+	 else if (playerChoice == "lizard" && computerChoice == "scissors") {
 		 document.write("Computer wins!")
 	 }
-	 else if playerChoice == "paper" & computerChoice == "lizard" {
+	 else if (playerChoice == "paper" && computerChoice == "lizard") {
 		 document.write("computerChoice wins!")
 	 }
-	 else if playerChoice == "spock" & computerChoice == "paper" {
+	 else if (playerChoice == "spock" && computerChoice == "paper") {
 		 document.write("Computer wins!")
 	 }
-	 else if playerChoice == "rock" & computerChoice == "spock" {
+	 else if (playerChoice == "rock" && computerChoice == "spock") {
 		 document.write("Computer wins!")
 	 }
-	 else if playerChoice == "scissors" & computerChoice == "rock" {
+	 else if (playerChoice == "scissors" && computerChoice == "rock") {
 		 document.write("Computer wins!")
 	 }
-	 else if playerChoice == computerChoice {
+	 else if (playerChoice == computerChoice) {
 		 	document.write("It's a tie!")
 	 }
 	 else {
@@ -89,7 +89,7 @@
 			c = "rock";
 		}
 		else if( c < .4) {
-			c = "paper"
+			c = "paper";
 		}
 		else if(c < .6) {
 			c = "scissors"
@@ -102,7 +102,7 @@
 		}
 		// ask player for their choice
 		var p = prompt("Choose rock, paper, lizard, spock, or scissors");
-		compare(playerChoice, computerChoice)
+
 		compare(p, c);
 	</script>
 </body>
